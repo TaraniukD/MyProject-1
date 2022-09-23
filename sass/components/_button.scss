@@ -1,0 +1,23 @@
+.button {
+  height: 42px;
+  border: 0;
+
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-weight: 600;
+
+  transition: color var(--main-transition), border-color var(--main-transition),
+    background-color var(--main-transition);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--button-focus-color);
+}
+
+.button:focus {
+  color: var(--secondary-text-color);
+}
