@@ -158,9 +158,26 @@
     filter: blur(50px);
   }
 
-  .ice-icon {
-    filter: blur(50px);
-  }
+ .ice-icon {
+   fill: #fcfcfc;
+   animation-name: changefill;
+   animation-iteration-count: infinite;
+   animation-duration: 5s;
+ }
+
+ @keyframes changefill {
+   0% {
+     fill: rgb(235, 244, 244);
+   }
+
+   50% {
+     fill: rgb(232, 233, 163);
+   }
+
+   100% {
+     fill: rgb(193, 248, 92);
+   }
+ }
 
   .hero-numbers {
     display: none;
@@ -280,6 +297,12 @@
 
     &__image {
       width: 152px;
+        transition: transform 300ms ease-in-out 100ms;
+        
+        &:hover,
+          :focus {
+          transform: rotate(360deg);
+        }
     }
 
     &__text {
@@ -288,6 +311,7 @@
       color: var(--secondary-text-color);
     }
   }
+  
 
   .hero-part__text {
     width: 151px;
@@ -343,8 +367,25 @@
   }
 
   .ice-icon {
-    filter: blur(50px);
+    fill: #fcfcfc;
+    animation-name: changefill;
+      animation-iteration-count: infinite;
+      animation-duration: 5s; 
   }
+
+    @keyframes changefill {
+      0% {
+        fill: rgb(235, 244, 244);
+      }
+  
+      50% {
+        fill: rgb(232, 233, 163);
+      }
+  
+      100% {
+        fill: rgb(193, 248, 92);
+      }
+    }
 
   .hero-numbers__part {
     display: inline-block;
@@ -497,6 +538,14 @@
     }
   }
 
+  .hero-list__image {
+    transition: transform 300ms ease-in-out 100ms;
+    &:hover,
+    :focus {
+      transform: rotate(360deg);
+    }
+  }
+
   .hero-part__text {
     width: 200px;
     position: relative;
@@ -531,9 +580,26 @@
     filter: blur(50px);
   }
 
-  .ice-icon {
-    filter: blur(50px);
-  }
+     .ice-icon {
+       fill: #fcfcfc;
+       animation-name: changefill;
+       animation-iteration-count: infinite;
+       animation-duration: 5s;
+     }
+  
+     @keyframes changefill {
+       0% {
+         fill: rgb(235, 244, 244);
+       }
+  
+       50% {
+         fill: rgb(232, 233, 163);
+       }
+  
+       100% {
+        fill: rgb(193, 248, 92);
+       }
+     }
 
   .picture {
     background: rgba(252, 252, 252, 0.44), blur(26.8405);
