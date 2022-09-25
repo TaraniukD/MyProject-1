@@ -37,10 +37,10 @@
 
   .hero-set {
     position: relative;
-    bottom: 290px;
+    bottom: 320px;
     left: 0px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 
   .hero-button {
@@ -48,7 +48,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 8px;
-    line-height: 1.29;
+    line-height: 1.25;
     text-decoration: none;
 
     display: flex;
@@ -56,20 +56,30 @@
     text-align: center;
 
     border: 2px solid var(--accent-color);
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: var(--main-background-color);
     color: var(--primary-text-color);
 
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
 
-    margin-right: 24px;
+    // padding-top: 4px;
+    // padding-bottom: 4px;
+    // padding-left: 18px;
+    // padding-right: 18px;
 
-    &:hover,
+    margin-right: 10px;
+    // margin-right: 24px;
+
+    &:hover {
+      border: 2px solid var(--button-focus-color);
+      color: var(--primary-text-color);
+    }
+
     &:focus {
-      border: 2px solid var(--border-color);
+      border: 2px solid var(--primary-text-color);
       color: var(--secondary-text-color);
     }
   }
@@ -87,9 +97,11 @@
     color: var(--accent-color);
     border: none;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: var(--border-color);
+    }
+    &:focus {
+      color: var(--secondary-text-color);
     }
   }
 
@@ -113,46 +125,42 @@
 
   .hero-part {
     display: inline-block;
-    width: 200px;
-      height: 270px;
+    width: 220px;
+    height: 300px;
     position: relative;
-    top: 27px;
-    left: 100px;
+    bottom: 39px;
+    left: 80px;
   }
-
 
   .hero-part__image {
-    min-width: 219px;
+    max-width: 219px;
+    left: -25px;
+    bottom: -75px;
+    position: relative;
   }
 
-     .fon-blure_wrap {
-      width: 300px;
-      height: 400px;
-      position: relative;
-    }
-  
-    .hero-part_img {
-      display: inline;
-      position: relative;
-      width: 200px;
-      height: 270px;
-      position: absolute;
-      top: -29;
-      right: -25;
-    }
-  
-    .fon_blure {
-      width: 300px;
-      height: 400px;
-      position: absolute;
-      bottom: -50px;
-      right: -65px;
-      filter: blur(50px);
-    }
-  
-    .ice-icon {
-      filter: blur(50px);
-    }
+  .hero-part_img {
+    display: inline;
+    position: relative;
+    width: 220px;
+    height: 270px;
+    position: absolute;
+    top: -29;
+    right: -25;
+  }
+
+  .fon_blure {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    bottom: -65px;
+    right: -45px;
+    filter: blur(50px);
+  }
+
+  .ice-icon {
+    filter: blur(50px);
+  }
 
   .hero-numbers {
     display: none;
@@ -163,10 +171,6 @@
   background-color: transparent;
   border: none;
 }
-
-// .background-filter {
-
-// }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
@@ -228,16 +232,19 @@
     background-color: var(--main-background-color);
     color: var(--primary-text-color);
 
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-right: 10px;
 
-    margin-right: 34px;
+    &:hover {
+      border: 2px solid var(--button-focus-color);
+      color: var(--primary-text-color);
+    }
 
-    &:hover,
     &:focus {
-      border: 2px solid var(--border-color);
+      border: 2px solid var(--primary-text-color);
       color: var(--secondary-text-color);
     }
   }
@@ -258,17 +265,18 @@
     color: var(--accent-color);
     background-color: var(--main-background-color);
     border: none;
-    margin-top: 10px;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: var(--border-color);
+    }
+    &:focus {
+      color: var(--secondary-text-color);
     }
   }
 
   .hero-list {
     position: relative;
-    top: 65px;
+    top: 45px;
 
     &__image {
       width: 152px;
@@ -285,7 +293,7 @@
     width: 151px;
     position: relative;
     left: 180px;
-    bottom: 75px;
+    bottom: 95px;
   }
 
   .hero-additions__title {
@@ -297,12 +305,12 @@
   }
 
   .hero-part {
-      width: 300px;
-        height: 400px;
     position: relative;
+    width: 300px;
+    height: 400px;
     display: inline-block;
     left: 370px;
-    bottom: 385px;
+    bottom: 375px;
     pointer-events: none;
   }
 
@@ -315,32 +323,28 @@
     width: 257px;
     height: 324.92px;
   }
-    .fon-blure_wrap {
-   
-      position: relative;
-    }
-  
-    .hero-part_img {
-      display: inline;
-      position: relative;
-      width: 300px;
-      height: 400px;
-      position: absolute;
-      top: 40;
-    }
-  
-    .fon_blure {
-      width: 400px;
-      height: 550px;
-      position: absolute;
-      bottom: -45px;
-      right: -30px;
-      filter: blur(50px);
-    }
-  
-    .ice-icon {
-      filter: blur(50px);
-    }
+
+  .hero-part_img {
+    display: inline;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+  }
+
+  .fon_blure {
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    bottom: -25px;
+    right: -32px;
+    filter: blur(50px);
+  }
+
+  .ice-icon {
+    filter: blur(50px);
+  }
 
   .hero-numbers__part {
     display: inline-block;
@@ -444,9 +448,13 @@
     margin-top: 28px;
     margin-right: 34px;
 
-    &:hover,
+    &:hover {
+      border: 2px solid var(--button-focus-color);
+      color: var(--primary-text-color);
+    }
+
     &:focus {
-      border: 2px solid var(--border-color);
+      border: 2px solid var(--primary-text-color);
       color: var(--secondary-text-color);
     }
   }
@@ -470,15 +478,17 @@
     border: none;
     margin-top: 32px;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: var(--border-color);
+    }
+    &:focus {
+      color: var(--secondary-text-color);
     }
   }
 
   .hero-list {
     position: relative;
-    top: 120px;
+    top: 127px;
 
     &__text {
       font-size: 14px;
@@ -498,31 +508,25 @@
     margin-bottom: 32px;
   }
 
-  .hero-icon {
-    fill: var(--secondary-text-color);
-  }
-
   .hero-part {
-    width: 477px;
-      height: 590px;
     display: inline-block;
+    width: 477px;
+    height: 590px;
     position: relative;
     left: 620px;
-    bottom: 491px;
+    bottom: 520px;
   }
-  .fon-blure_wrap {
-    
-    position: relative;
-  }
+
   .hero-part_img {
+    position: relative;
     width: 100%;
     position: absolute;
     top: 40;
-    }
-    
+  }
+
   .fon_blure {
     position: absolute;
-    top:-95px;
+    top: -95px;
     right: -90px;
     filter: blur(50px);
   }
@@ -536,7 +540,7 @@
   }
 
   .hero-part__image {
-    margin-bottom: 0px;  
+    margin-bottom: 0px;
   }
 
   .hero-numbers__part {
@@ -551,7 +555,6 @@
   }
   .hero-numbers {
     text-align: right;
-    
   }
 
   .hero-numbers__one {
@@ -577,8 +580,24 @@
 .btn {
   background-color: transparent;
   border: none;
-  margin-top: 5px;
+  margin-top: 15px;
+  width: 60px;
+  height: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
+ .hero-icon {
+   height: 20px;
+   fill: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   :focus {
+    transform: 250ms cubic-bezier(0.4, 0, 0.2, 0.8);
+    fill: var(--accent-color);
+
+   }
+ }
 
 .hero-numbers__one {
   @media screen and (min-width: 768px) {
@@ -586,5 +605,11 @@
   }
   @media screen and (min-width: 768px) {
     font-size: 46px;
+  }
+}
+
+.hero-set {
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
