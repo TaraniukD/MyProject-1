@@ -125,12 +125,6 @@
     min-width: 219px;
   }
 
-     .fon-blure_wrap {
-      width: 300px;
-      height: 400px;
-      position: relative;
-    }
-  
     .hero-part_img {
       display: inline;
       position: relative;
@@ -279,6 +273,19 @@
       line-height: 1.7;
       color: var(--secondary-text-color);
     }
+            transition: background-color 500ms linear,
+            transform 500ms ease-in-out 500ms;
+      
+            &:hover {
+              transform: rotate(180deg);
+            }
+  }
+
+  .hero-list__image {
+    transition: background-color 500ms linear, transform 500ms ease-in-out 500ms;
+    &:hover {
+      transform: rotate(180deg);
+    }
   }
 
   .hero-part__text {
@@ -315,10 +322,6 @@
     width: 257px;
     height: 324.92px;
   }
-    .fon-blure_wrap {
-   
-      position: relative;
-    }
   
     .hero-part_img {
       display: inline;
@@ -485,6 +488,13 @@
       line-height: 1.42;
       color: var(--secondary-text-color);
     }
+
+            transition: background-color 500ms linear,
+            transform 500ms ease-in-out 500ms;
+      
+            &:hover {
+              transform: rotate(180deg);
+            }
   }
 
   .hero-part__text {
