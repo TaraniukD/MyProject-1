@@ -167,15 +167,15 @@
 
  @keyframes changefill {
    0% {
-     fill: rgb(235, 244, 244);
+     fill:#fcfcfc;
    }
 
    50% {
-     fill: rgb(232, 233, 163);
+     fill: #EFD478;
    }
 
    100% {
-     fill: rgb(193, 248, 92);
+     fill: #D6936D;
    }
  }
 
@@ -374,18 +374,18 @@
   }
 
     @keyframes changefill {
-      0% {
-        fill: rgb(235, 244, 244);
-      }
-  
-      50% {
-        fill: rgb(232, 233, 163);
-      }
-  
-      100% {
-        fill: rgb(193, 248, 92);
-      }
-    }
+   0% {
+     fill:#fcfcfc;
+   }
+
+   50% {
+     fill: #EFD478;
+   }
+
+   100% {
+     fill: #D6936D;
+   }
+ }
 
   .hero-numbers__part {
     display: inline-block;
@@ -587,19 +587,19 @@
        animation-duration: 5s;
      }
   
-     @keyframes changefill {
-       0% {
-         fill: rgb(235, 244, 244);
-       }
-  
-       50% {
-         fill: rgb(232, 233, 163);
-       }
-  
-       100% {
-        fill: rgb(193, 248, 92);
-       }
-     }
+ @keyframes changefill {
+   0% {
+     fill: #fcfcfc;
+   }
+
+   50% {
+     fill: #EFD478;
+   }
+
+   100% {
+     fill: #D6936D;
+   }
+ }
 
   .picture {
     background: rgba(252, 252, 252, 0.44), blur(26.8405);
